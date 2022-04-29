@@ -28,6 +28,7 @@ public class Login extends JFrame {
         textField2 = new JTextField();
         button1 = new JButton();
         button2 = new JButton();
+        label3 = new JLabel();
 
         //======== this ========
         setTitle("Welcome To TeaShop");
@@ -57,6 +58,11 @@ public class Login extends JFrame {
         button2.setText("\u5728\u7ebf\u70b9\u5355");
         contentPane.add(button2);
         button2.setBounds(155, 160, 90, 45);
+
+        //---- label3 ----
+        label3.setText("\u76f4\u63a5\u70b9");
+        contentPane.add(label3);
+        label3.setBounds(260, 125, 100, label3.getPreferredSize().height);
 
         {
             // compute preferred size
@@ -107,6 +113,7 @@ public class Login extends JFrame {
     private JTextField textField2;
     private JButton button1;
     private JButton button2;
+    private JLabel label3;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
     public static void main(String[] args) {
         new Login();
