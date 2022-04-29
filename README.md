@@ -1,7 +1,11 @@
 # TeaShop2
 奶茶店
+使用方法： 
+
 1、加载pom.xml中的依赖
+
 2、运行Login类的Main方法即可
+
 使用teaShop2数据库！！！！！！！
 ### 1、tea表
 
