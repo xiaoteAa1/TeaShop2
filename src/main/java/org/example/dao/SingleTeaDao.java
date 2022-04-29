@@ -5,7 +5,7 @@ import org.example.domain.SingleTea;
 import java.util.List;
 
 /**
- * 只操作Tea表，主要对Tea表进行增删改
+ * 只操作tea表，主要对tea表进行增删改
  */
 public interface SingleTeaDao {
 

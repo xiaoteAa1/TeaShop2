@@ -4,6 +4,9 @@ import org.example.domain.Tea;
 
 import java.util.List;
 
+/**
+ * 用于返回多表查询的结果
+ */
 public interface TeaDao {
     //SELECT
     //查询单条记录

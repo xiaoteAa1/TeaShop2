@@ -2,6 +2,9 @@ package org.example.domain;
 
 import java.sql.Timestamp;
 
+/**
+ * 存储订单表的信息
+ */
 public class Order {
     private int id;//订单编号
     private int mch_id;//商户id

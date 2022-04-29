@@ -5,6 +5,9 @@ import org.example.utils.JDBCUtils;
 
 import java.sql.*;
 
+/**
+ * 对statistic表进行操作
+ */
 public class StatisticDaoImpl implements StatisticDao {
     Connection conn;
     PreparedStatement psta;

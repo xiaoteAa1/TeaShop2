@@ -6,7 +6,7 @@ import java.sql.Timestamp;
 import java.util.List;
 
 /**
- * 操作订单表Order
+ * 操作order_表
  */
 public interface OrderDao {
     //SELECT

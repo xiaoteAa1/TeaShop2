@@ -1,5 +1,8 @@
 package org.example.domain;
 
+/**
+ * 存储tea表的信息
+ */
 public class SingleTea {
     //==奶茶表属性==
     private int teaId;//奶茶编号

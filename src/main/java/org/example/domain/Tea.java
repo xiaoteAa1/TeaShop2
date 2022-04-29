@@ -1,5 +1,8 @@
 package org.example.domain;
 
+/**
+ * 该类包含tea表、store表、statistic表的信息，涉及到三表查询
+ */
 public class Tea {
     //==奶茶表属性==
     private int teaId;//奶茶编号

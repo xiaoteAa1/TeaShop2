@@ -6,6 +6,9 @@ import org.example.utils.JDBCUtils;
 
 import java.sql.*;
 
+/**
+ * 对store表进行操作
+ */
 public class StoreDaoImpl implements StoreDao {
     Connection conn;
     PreparedStatement psta;

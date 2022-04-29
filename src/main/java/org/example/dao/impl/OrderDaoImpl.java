@@ -11,6 +11,9 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 对order表进行操作
+ */
 public class OrderDaoImpl implements OrderDao {
     Connection conn;
     PreparedStatement psta;

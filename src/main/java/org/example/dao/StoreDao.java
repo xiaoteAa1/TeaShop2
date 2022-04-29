@@ -1,7 +1,7 @@
 package org.example.dao;
 
-/*
-    操作store库存表
+/**
+ * 操作store表
  */
 public interface StoreDao {
     //SELECT

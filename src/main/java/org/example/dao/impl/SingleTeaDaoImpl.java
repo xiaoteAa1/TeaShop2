@@ -6,6 +6,9 @@ import org.example.utils.JDBCUtils;
 
 import java.sql.*;
 
+/**
+ * 对tea表进行操作
+ */
 public class SingleTeaDaoImpl implements SingleTeaDao {
     Connection conn;
     PreparedStatement psta;
