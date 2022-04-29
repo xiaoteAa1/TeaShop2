@@ -11,7 +11,10 @@ import org.example.dao.impl.TeaDaoImpl;
 import org.example.domain.SingleTea;
 import org.example.domain.Tea;
 import org.example.service.TeaService;
+import org.example.utils.ConnectionHandler;
 
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.List;
 
 public class TeaServiceImpl implements TeaService {
@@ -19,6 +22,7 @@ public class TeaServiceImpl implements TeaService {
     TeaDao teaDao = new TeaDaoImpl();
     StoreDao storeDao = new StoreDaoImpl();
     StatisticDao statisticDao = new StatisticDaoImpl();
+    Connection conn;
 
     //=====SELECT=====
     @Override
@@ -70,11 +74,26 @@ public class TeaServiceImpl implements TeaService {
     //这里需要事务！！！！！！！
     @Override
     public boolean updateAll(int id, String name, double price, String type, int isSale, String remark, int count) {
+//        conn = ConnectionHandler.getConnection();
         //1、先更新tea表
         boolean r1 = singleTeaDao.updateTea(id,name,price,type,isSale,remark);
 
         //2、再更新store表库存
         boolean r2 = storeDao.updateTeaStore(id,count);
+
+//        if(r1 && r2){
+//            try {
+//                conn.commit();
+//            } catch (SQLException e) {
+//                e.printStackTrace();
+//            }
+//        }else{
+//            try {
+//                conn.rollback();
+//            } catch (SQLException e) {
+//                e.printStackTrace();
+//            }
+//        }
 
         return r1 && r2;
     }
